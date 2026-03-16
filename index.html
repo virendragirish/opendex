@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OpenDex Gateway | Oorto Labs</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Inter', sans-serif; }
+</style>
+
+</head>
+
+<body class="bg-gray-950 text-gray-100">
+
+<!-- NAVBAR -->
+
+<header class="border-b border-gray-800">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<h1 class="text-xl font-bold text-white">OpenDex</h1>
+
+<nav class="space-x-6 text-sm text-gray-300">
+<a href="#features" class="hover:text-white">Features</a>
+<a href="#architecture" class="hover:text-white">Architecture</a>
+<a href="#specs" class="hover:text-white">Developers</a>
+<a href="#cloud" class="hover:text-white">Oorto Cloud</a>
+</nav>
+
+</div>
+</header>
+
+<!-- HERO -->
+
+<section class="py-24 text-center">
+
+<div class="max-w-4xl mx-auto px-6">
+
+<h2 class="text-5xl font-bold leading-tight">
+Secure Enterprise AI Orchestration
+</h2>
+
+<p class="mt-6 text-lg text-gray-400">
+OpenDex Gateway discovers, governs, and accelerates AI tool execution across open-source ecosystems and enterprise systems.
+</p>
+
+<div class="mt-8 flex justify-center gap-4">
+
+<a href="#" class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-medium">
+View on GitHub
+</a>
+
+<a href="#architecture" class="border border-gray-700 px-6 py-3 rounded-lg hover:bg-gray-800">
+Architecture
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ARCHITECTURE -->
+
+<section id="architecture" class="py-20 border-t border-gray-800">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h3 class="text-3xl font-semibold mb-12 text-center">Architecture Pipeline</h3>
+
+<div class="grid md:grid-cols-3 gap-8 text-center">
+
+<!-- Open Source -->
+
+<div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+<h4 class="font-semibold text-lg mb-3">Inbound: Open Source</h4>
+<p class="text-gray-400 text-sm">
+GitHub<br>
+SQLite<br>
+Weather API
+</p>
+
+<p class="mt-4 text-xs text-green-400">
+Status: Sandboxed
+</p>
+</div>
+
+<!-- Core -->
+
+<div class="bg-indigo-900/20 p-6 rounded-xl border border-indigo-700">
+<h4 class="font-semibold text-lg mb-3">OpenDex Gateway</h4>
+<p class="text-gray-300 text-sm">
+Discovery<br>
+Registry<br>
+Semantic Cache
+</p>
+
+<p class="mt-4 text-xs text-indigo-400">
+Status: Governing
+</p>
+</div>
+
+<!-- Enterprise -->
+
+<div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+<h4 class="font-semibold text-lg mb-3">Inbound: Enterprise</h4>
+<p class="text-gray-400 text-sm">
+Salesforce<br>
+SAP<br>
+Internal Databases
+</p>
+
+<p class="mt-4 text-xs text-red-400">
+Status: mTLS Secured
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section id="features" class="py-20 border-t border-gray-800">
+
+<div class="max-w-7xl mx-auto px-6">
+
+<h3 class="text-3xl font-semibold text-center mb-14">Key Features</h3>
+
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+<!-- Feature 1 -->
+
+<div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+<h4 class="font-semibold mb-3">🔍 Autodiscovery & Registry</h4>
+<p class="text-gray-400 text-sm">
+OpenDex automatically scans your network, identifies MCP servers,
+and populates your Skills DB with version-controlled schemas.
+</p>
+</div>
+
+<!-- Feature 2 -->
+
+<div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+<h4 class="font-semibold mb-3">💾 Semantic Outcome Layer</h4>
+<p class="text-gray-400 text-sm">
+Cache successful tool executions in vector format and serve known outcomes in under 50ms.
+</p>
+</div>
+
+<!-- Feature 3 -->
+
+<div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+<h4 class="font-semibold mb-3">🛡️ Enterprise Segregation</h4>
+<p class="text-gray-400 text-sm">
+Strict isolation between community tools and enterprise systems using mTLS, role policies and PII scrubbing.
+</p>
+</div>
+
+<!-- Feature 4 -->
+
+<div class="bg-gray-900 p-6 rounded-xl border border-gray-800">
+<h4 class="font-semibold mb-3">📊 Outcome Interface</h4>
+<p class="text-gray-400 text-sm">
+Convert raw JSON tool outputs into Markdown summaries and interactive UI widgets for HITL workflows.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- TECH SPECS -->
+
+<section id="specs" class="py-20 border-t border-gray-800">
+
+<div class="max-w-4xl mx-auto px-6">
+
+<h3 class="text-3xl font-semibold text-center mb-10">Technical Specifications</h3>
+
+<div class="bg-gray-900 p-8 rounded-xl border border-gray-800">
+
+<pre class="text-sm text-gray-300 overflow-x-auto">
+
+Protocol:
+MCP 1.0 (SSE / stdio)
+
+Database:
+PostgreSQL — Metadata
+Redis — Semantic Cache
+
+Authentication:
+OAuth 2.1
+OIDC
+mTLS Handshakes
+
+Latency:
+&lt;15ms Registry Lookup
+</pre>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- OORTO CLOUD -->
+
+<section id="cloud" class="py-24 border-t border-gray-800">
+
+<div class="max-w-4xl mx-auto text-center px-6">
+
+<h3 class="text-3xl font-semibold mb-6">
+The Oorto Cloud Advantage
+</h3>
+
+<p class="text-gray-400 text-lg leading-relaxed">
+OpenDex doesn't just connect tools — it remembers outcomes.
+Using an intelligent invalidation strategy, Oorto Cloud ensures AI agents
+operate on the latest enterprise data while reducing operational costs
+by up to <span class="text-indigo-400 font-semibold">60%</span>.
+</p>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="border-t border-gray-800 py-10">
+
+<div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+
+<p>Oorto Labs © 2026</p>
+
+<div class="space-x-6 mt-4 md:mt-0">
+<a href="#" class="hover:text-white">GitHub</a>
+<a href="#" class="hover:text-white">Discord</a>
+<a href="#" class="hover:text-white">X (Twitter)</a>
+<a href="mailto:connect@oorto.com" class="hover:text-white">Contact</a>
+</div>
+
+</div>
+
+<div class="text-center text-xs text-gray-600 mt-6">
+Standardizing the Agentic Web
+</div>
+
+</footer>
+
+</body>
+</html>
